@@ -6,15 +6,19 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Welcome!</h1>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, harum ullam. Aperiam quae repudiandae quas, corporis illo labore accusantium inventore sint eveniet incidunt possimus totam ex laboriosam eius asperiores sapiente.</p>
+        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, harum ullam. Aperiam quae
+          repudiandae quas, corporis illo labore accusantium inventore sint eveniet incidunt possimus totam ex
+          laboriosam eius asperiores sapiente.</p>
       </div>
     </div>
 
 
-<router-view></router-view>
-<router-link to="/">Home</router-link>
+    <router-view></router-view>
+   <router-link to="/">Home</router-link>
 <router-link to="/image">Other</router-link>
-<router-link to="/grid">Next</router-link>
+<router-link to="/grid">Next</router-link> 
+<router-link to="/accordion">Last</router-link> 
+
 
 
     <app-footer></app-footer>
@@ -29,9 +33,21 @@
     data() {
       return {
         show: true,
-      }
+        image: image, 
+        }
+        // module.exports = {
+        //   chainWebpack: config => {
+        //     config.module
+        //       .rule('images')
+        //       .use('url-loader')
+        //       .loader('url-loader')
+        //       .tap(options => Object.assign(options, {
+        //         limit: 10240
+        //       }))
+          // }
+        }
     }
-  }
+
 
 </script>
 

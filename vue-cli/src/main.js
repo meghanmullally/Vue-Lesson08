@@ -20,11 +20,18 @@ const router = new VueRouter({
 })
 
 
+import vGallery from 'v-gallery';
+Vue.use(vGallery);
+
 Vue.component('blog-post', {
   props: ['postTitle'],
   template: '<p>{{postTitle}}</p>'
 });
 
+// Vue.component('image-post', {
+//   props: ['image'],
+//   template: '<img>{{image-post}}</img>'
+// })
 
 
 new Vue({
